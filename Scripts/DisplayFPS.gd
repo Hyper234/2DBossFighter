@@ -1,6 +1,7 @@
 extends Label
 
-var sum: float = 0
+var sum: int = 0
+var sumTime: float = 0
 var updateInterval: float = 0.25
 
 # Called when the node enters the scene tree for the first time.
@@ -10,8 +11,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	sum += delta
+	sum += 1
+	sumTime += delta
 	
-	if sum >= updateInterval:
-		text = str("FPS: ", int(1/delta))
-		sum -= updateInterval
+	if sumTime >= updateInterval:
+		text = str("FPS: ", int(sum / sumTime))
+		sum = 0
+		sumTime = 0
