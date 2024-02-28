@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cbnd764uwd2t"]
+[gd_scene load_steps=4 format=3 uid="uid://cbnd764uwd2t"]
 
 [ext_resource type="PackedScene" uid="uid://dc0trssbohakh" path="res://Scenes/Player.tscn" id="1_2vvn0"]
 [ext_resource type="Script" path="res://Scripts/DisplayFPS.gd" id="1_dk170"]
-[ext_resource type="Script" path="res://Scripts/Player.gd" id="2_5uxgw"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_b3jf4"]
 font_size = 10
@@ -11,10 +10,9 @@ font_color = Color(0, 1, 0, 1)
 [node name="Root" type="Node2D"]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_2vvn0")]
-modulate = Color(0, 0.541176, 0.0235294, 1)
-position = Vector2(0, 0)
-scale = Vector2(0.4, 0.4)
-script = ExtResource("2_5uxgw")
+modulate = Color(0.443137, 0.619608, 0, 1)
+position = Vector2(984, 492)
+scale = Vector2(0.5, 0.5)
 
 [node name="FPS Counter" type="Label" parent="."]
 offset_left = 3.0
