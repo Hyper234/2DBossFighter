@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6ery1syemhkx"]
+
+[ext_resource type="Texture2D" uid="uid://b7361y42etlol" path="res://Assets/TargetDummy.png" id="1_1vebo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dw3d0"]
+radius = 40.05
+
+[node name="TargetDummy" type="RigidBody2D"]
+gravity_scale = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_1vebo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_dw3d0")

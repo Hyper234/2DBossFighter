@@ -4,10 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://bg8yj3fsiyb8o" path="res://Assets/Circle.png" id="1_8oiul"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tgpl1"]
-radius = 9.9026
+radius = 10.3896
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D"]
 position = Vector2(580, 312)
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_0ewhv")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
