@@ -2,14 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://b7361y42etlol" path="res://Assets/TargetDummy.png" id="1_1vebo"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_dw3d0"]
-radius = 40.05
+[sub_resource type="CircleShape2D" id="CircleShape2D_clooo"]
+radius = 39.0
 
-[node name="TargetDummy" type="RigidBody2D"]
-gravity_scale = 0.0
+[node name="TargetDummy" type="StaticBody2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="TargetDummy" type="Sprite2D" parent="."]
 texture = ExtResource("1_1vebo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_dw3d0")
+shape = SubResource("CircleShape2D_clooo")
