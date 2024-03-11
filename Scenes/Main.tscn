@@ -13,7 +13,8 @@ font_color = Color(0, 1, 0, 1)
 [node name="Player" parent="." instance=ExtResource("1_2vvn0")]
 
 [node name="TargetDummy" parent="." instance=ExtResource("3_a3hmr")]
-position = Vector2(228, 478)
+position = Vector2(934, 490)
+scale = Vector2(2, 2)
 
 [node name="FPS Counter" type="Label" parent="."]
 offset_left = 3.0
